@@ -1,0 +1,26 @@
+.carousel {
+  margin-top: 10px;
+  width: 100%;
+  height: 400px; /* Set the desired height */
+  overflow: hidden; /* Hide any overflow */
+}
+
+.carousel-item.active {
+  display: block; /* Ensure active item is visible */
+}
+
+.carousel-inner {
+  height: 100%; /* Ensure the inner content fills the carousel height */
+}
+
+.carousel-item {
+  height: 100%; /* Ensure each carousel item fills the carousel height */
+  display: flex; /* Use flexbox to align items vertically */
+  justify-content: center; /* Center the image vertically */
+}
+
+.carousel-item img {
+  max-height: 400%; /* Ensure the image height doesn't exceed the carousel height */
+  width: auto; /* Maintain aspect ratio */
+  object-fit: contain; /* Fit the image inside the container */
+}
